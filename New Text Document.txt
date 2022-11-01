@@ -12,7 +12,7 @@ CREATE TABLE loan_details (
     branch_id varchar(6),
     loan_amount INT(7),
 PRIMARY KEY( branch_id,customer_number),
-FOREIGN KEY (branch_id) REFERENCES branch_master(branch_id)
+constraint branch_id FOREIGN KEY (branch_id) REFERENCES branch_master(branch_id)
     
 );
 CREATE TABLE customer_master (
